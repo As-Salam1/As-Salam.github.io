@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Quran.jpg">
+  <title>Quran Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navigation">
+    <a href="Index.html">Main Page</a>
+    <a href="Quran.html">Quran Player</a>
+    <a href="Feedback.html">User Feedback</a>
+    <a href="names_of_allah.html">99 Names of Allah</a>
+    <a href="Prophets.html">Prophets of Islam</a>
+    <!-- Add more tabs with their corresponding URLs -->
+  </div>
+
+  <div class="container">
+    <h1>Quran Player</h1>
+    <div class="audio-player">
+      <audio id="quran-audio" controls></audio>
+    </div>
+    <div class="controls">
+      <button id="play-btn">Play</button>
+      <button id="pause-btn">Pause</button>
+      <button id="stop-btn">Stop</button>
+    </div>
+    <div class="upload-container">
+      <input type="file" id="audio-file" accept=".mp3">
+    </div>
+    <div class="surah-dropdown">
+      <select id="surah-select">
+        <option value="" selected disabled>Select a Surah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/1.mp3">Surah Al-Fatihah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/2.mp3">Surah Al-Baqarah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/3.mp3">Surah Ali 'Imran</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/4.mp3">Surah An-Nisa</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/5.mp3">Surah Al-Ma'idah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/6.mp3">Surah Al-An'am</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/7.mp3">Surah Al-A'raf</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/8.mp3">Surah Al-Anfal</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/9.mp3">Surah At-Tawbah</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/10.mp3">Surah Yunus</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/11.mp3">Surah Hud</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/12.mp3">Surah Yusuf</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/13.mp3">Surah Ar-Ra'd</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/14.mp3">Surah Ibrahim</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/15.mp3">Surah Al-Hijr</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/16.mp3">Surah An-Nahl</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/17.mp3">Surah Al-Isra</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/18.mp3">Surah Al-Kahf</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/19.mp3">Surah Maryam</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/20.mp3">Surah Taha</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/21.mp3">Surah Al-Anbya</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/22.mp3">Surah Al-Hajj</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/23.mp3">Surah Al-Mu'minun</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/24.mp3">Surah An-Nur</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/25.mp3">Surah Al-Furqan</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/26.mp3">Surah Ash-Shu'ara</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/27.mp3">Surah An-Naml</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/28.mp3">Surah Al-Qasas</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/29.mp3">Surah Al-'Ankabut</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/30.mp3">Surah Ar-Rum</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/31.mp3">Surah Luqman</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/32.mp3">Surah As-Sajdah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/33.mp3">Surah Al-Ahzab</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/34.mp3">Surah Saba</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/35.mp3">Surah Fatir</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/36.mp3">Surah Ya-Sin</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/37.mp3">Surah As-Saffat</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/38.mp3">Surah Sad</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/39.mp3">Surah Az-Zumar</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/40.mp3">Surah Ghafir</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/41.mp3">Surah Fussilat</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/42.mp3">Surah Ash-Shuraa</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/43.mp3">Surah Az-Zukhruf</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/44.mp3">Surah Ad-Dukhan</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/45.mp3">Surah Al-Jathiyah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/46.mp3">Surah Al-Ahqaf</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/47.mp3">Surah Muhammad</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/48.mp3">Surah Al-Fath</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/49.mp3">Surah Al-Hujurat</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/50.mp3">Surah Qaf</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/51.mp3">Surah Adh-Dhariyat</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/52.mp3">Surah At-Tur</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/53.mp3">Surah An-Najm</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/54.mp3">Surah Al-Qamar</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/55.mp3">Surah Ar-Rahman</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/56.mp3">Surah Al-Waqi'ah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/57.mp3">Surah Al-Hadid</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/58.mp3">Surah Al-Mujadila</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/59.mp3">Surah Al-Hashr</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/60.mp3">Surah Al-Mumtahanah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/61.mp3">Surah As-Saf</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/62.mp3">Surah Al-Jumu'ah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/63.mp3">Surah Al-Munafiqun</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/64.mp3">Surah At-Taghabun</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/65.mp3">Surah At-Talaq</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/66.mp3">Surah At-Tahrim</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/67.mp3">Surah Al-Mulk</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/68.mp3">Surah Al-Qalam</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/69.mp3">Surah Al-Haqqah</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/70.mp3">Surah Al-Ma'arij</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/71.mp3">Surah Nuh</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/72.mp3">Surah Al-Jinn</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/73.mp3">Surah Al-Muzzammil</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/74.mp3">Surah Al-Muddaththir</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/75.mp3">Surah Al-Qiyamah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/76.mp3">Surah Al-Insan</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/77.mp3">Surah Al-Mursalat</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/78.mp3">Surah An-Naba</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/79.mp3">Surah An-Nazi'at</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/80.mp3">Surah 'Abasa</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/81.mp3">Surah At-Takwir</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/82.mp3">Surah Al-Infitar</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/83.mp3">Surah Al-Mutaffifin</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/84.mp3">Surah Al-Inshiqaq</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/85.mp3">Surah Al-Buruj</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/86.mp3">Surah At-Tariq</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/87.mp3">Surah Al-A'la</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/88.mp3">Surah Al-Ghashiyah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/89.mp3">Surah Al-Fajr</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/90.mp3">Surah Al-Balad</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/91.mp3">Surah Ash-Shams</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/92.mp3">Surah Al-Layl</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/93.mp3">Surah Ad-Duhaa</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/94.mp3">Surah Ash-Sharh</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/95.mp3">Surah At-Tin</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/96.mp3">Surah Al-'Alaq</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/97.mp3">Surah Al-Qadr</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/98.mp3">Surah Al-Bayyinah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/99.mp3">Surah Az-Zalzalah</option>
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------->
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/100.mp3">Surah Al-'Adiyat</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/101.mp3">Surah Al-Qari'ah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/102.mp3">Surah At-Takathur</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/103.mp3">Surah Al-'Asr</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/104.mp3">Surah Al-Humazah</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/105.mp3">Surah Al-Fil</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/106.mp3">Surah Quraysh</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/107.mp3">Surah Al-Ma'un</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/108.mp3">Surah Al-Kawthar</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/109.mp3">Surah Al-Kafirun</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/110.mp3">Surah An-Nasr</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/111.mp3">Surah Al-Masad</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/112.mp3">Surah Al-Ikhlas</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/113.mp3">Surah Al-Falaq</option>
+        <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/114.mp3">Surah An-Nas</option>
+
+        <!-- Add more options for each Surah with their corresponding MP3 link -->
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

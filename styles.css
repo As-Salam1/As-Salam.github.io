@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4f1;
+  background-image: url('islamic_pattern2.jpg');
+  background-repeat: repeat;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(224, 233, 238, 0.7);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #9c4c4a;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.audio-player {
+  text-align: center;
+}
+
+.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #9c4c4a;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #ba5c5a;
+}
+
+.upload-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.upload-container input[type="file"] {
+  display: none;
+}
+
+.surah-dropdown {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.surah-dropdown select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.navigation {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation a {
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}
+
+#selected-surah {
+  font-size: 18px;
+  color: #9c4c4a;
+  margin-top: 20px;
+}
+
+#surah-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #63494a;
+  line-height: 1.5;
+}

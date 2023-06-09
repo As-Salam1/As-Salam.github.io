@@ -1,0 +1,72 @@
+body {
+  background-image: url("kaaba.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 500px;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 24px;
+  color: #333;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+textarea {
+  height: 150px;
+}
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.navigation {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation a {
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}

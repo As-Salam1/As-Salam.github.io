@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #220f00;
+  background-image: url('islamic_pattern3.jpg');
+  background-repeat: repeat;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(224, 233, 238, 0.7);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #9c4c4a;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #63494a;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+li:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(45deg, #ba947b, #f5d4b0);
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.name-meaning {
+  color: #7f6768;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.navigation {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation a {
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}
