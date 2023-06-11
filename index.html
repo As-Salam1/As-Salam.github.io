@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <!-- start page-wrapper -->
+<!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
         <div class="preloader">
@@ -82,7 +82,8 @@
                         <div class="row">
                             <div class="col col-lg-8 col-md-7 slide-caption">
                                 <div class="slide-top">
-                                    <span>Let’s Know Islam</span>
+                                            <div class="audio-player">
+        <audio id="quran-audio" controls></audio>
                                 </div>
                                 <div class="slide-title">
                                     <h2>As-salamu alaykum! </h2>
@@ -400,6 +401,18 @@
     <!-- end of page-wrapper -->
     <!-- All JavaScript files
     ================================================== -->
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var pageContent = document.getElementById("page-content");
+      var nasheed = document.getElementById("quran-audio");
+
+      nasheed.src = "nasheed.mp3";
+      nasheed.autoplay = true;
+      
+      pageContent.style.display = 'block';
+    });
+  </script>  
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/circle-progress.min.js"></script>
