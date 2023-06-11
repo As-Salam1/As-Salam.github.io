@@ -32,14 +32,17 @@
     <h1>User Feedback</h1>
     <form>
       <label for="feedback-name">Name:</label>
-      <input type="text" id="feedback-name" required>
+      <input type="text" name="name" required>
       
       <label for="feedback-email">Email:</label>
-      <input type="email" id="feedback-email" required>
+      <input type="email" name="email" required>
       
       <label for="feedback-message">Message:</label>
-      <textarea id="feedback-message" required></textarea>
+      <textarea id="feedback-message" name="message" required></textarea>
       
+      <input type="hidden" name="_subject" value="Someone has sent feedback">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_template" value="box">
       <button type="submit">Submit Feedback</button>
     </form>
   </div>
