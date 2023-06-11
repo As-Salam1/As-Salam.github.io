@@ -27,22 +27,21 @@
     <!-- Add more tabs with their corresponding URLs -->
   </div>
 
-<div class="container">
-  <img src="Quran.jpg" alt="Quran Player" style="max-width: 150px;">
-  <div class="audio-player">
-    <audio id="quran-audio" controls></audio>
-  </div>
-  <div class="controls">
-    <button id="play-btn">Play</button>
-    <button id="pause-btn">Pause</button>
-    <button id="stop-btn">Stop</button>
-  </div>
-  <div class="upload-container">
-    <input type="file" id="audio-file" accept=".mp3">
-  </div>
-  <div class="surah-dropdown">
-    <select id="surah-select">
-      <option value="" selected disabled>Select a Surah</option>
+  <div class="container">
+    <img src="Quran.jpg" alt="Quran Player" style="max-width: 150px;">
+    <div class="audio-player">
+      <audio id="quran-audio" controls></audio>
+    </div>
+    <div class="controls">
+      <button id="play-btn">Play</button>
+      <button id="pause-btn">Pause</button>
+      <button id="stop-btn">Stop</button>
+      <button id="save-timeline-btn">Save Timeline</button>
+      <button id="continue-surah-btn">Continue from Last Surah</button>
+    </div>
+    <div class="surah-dropdown">
+      <select id="surah-select">
+        <option value="" selected disabled>Select a Surah</option>
         <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/1.mp3">Surah Al-Fatihah</option>
         <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/2.mp3">Surah Al-Baqarah</option>
         <option value="https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/3.mp3">Surah Ali 'Imran</option>
@@ -204,5 +203,6 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="SaveTimeline.js"></script>
 </body>
 </html>
